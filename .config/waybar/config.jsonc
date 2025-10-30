@@ -1,0 +1,96 @@
+{
+	"layer":"bottom",
+	"reload_style_on_change": true,
+	"modules-right": ["hyprland/workspaces", "keyboard-state", "pulseaudio", "group/system", "clock"],
+
+	"hyprland/workspaces": {
+		"all-outputs": true,
+		"format": "{icon}",
+		"format-icons": {
+			"1": "α",
+			"2": "β",
+			"3": "γ",
+			"4": "δ",
+			"5": "ε",
+			"6": "ϝ",
+			"7": "ζ",
+			"8": "η",
+			"9": "θ",
+			"10": "ō"
+		}
+	},
+
+
+
+	"hyprland/window": {
+		"format":"{}",
+		"separate-outputs":	true,
+		"max-length":100
+	},
+
+	"keyboard-state": {
+		"numlock": true,
+		"format": {
+			"numlock": "{icon}",
+		},
+		"format-icons": {
+			"locked": " ",
+			"unlocked": " "
+		}
+	},
+
+
+  
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-muted": " ",
+		"format-source": "{volume}%",
+		"format-source-muted": " ",
+		"format-icons": {
+			"default": ["󰕿", "󰖀", "󰕾 "]
+		},
+		"on-click": "pavucontrol",
+		"on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
+		"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%"    
+	},
+
+
+	"group/system": {
+		"orientation": "horizontal",
+		"drawer": {
+			"click-to-reveal": false
+		},
+		"modules": ["custom/stats", "disk", "memory", "cpu", "network"]
+	},
+
+	"custom/stats": {
+		"format": " "
+	},
+
+	"disk": {
+		"format": "󰋊  {percentage_free}%",
+		"interval": 10,
+		"path": "/"
+	},
+
+	"memory": {
+		"format": "  {}%"
+	},
+
+	"cpu": {
+		"format": "  {}%"
+	},
+
+	"network": {
+		"format": "󰈀  {ipaddr}/{cidr}",
+		"format-wifi": " Connected",
+		"format-disconnected": "󱛅 Disconnected", //An empty format will hide the module.
+		"max-length": 50,
+		"on-click": "foot -e nmtui"
+	},
+
+	"clock": {
+		"format": "{:%b %d  %H:%M}"
+	}
+}
