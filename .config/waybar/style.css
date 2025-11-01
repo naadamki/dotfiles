@@ -3,12 +3,13 @@
 * {
     border: none;
     border-radius: 0;
+    font-family: Inconsolata;
     font-size: 14px;
     min-height: 0;
 }
 
 window#waybar {
-    background-color: transparent;
+    background-color: @color0;
     color: @color7;
 }
 
@@ -21,15 +22,15 @@ tooltip label {
 	color: @color0;
 }
 
-#keyboard-state, #pulseaudio, #system, #disk, #memory, #cpu, #network, #clock {
+#keyboard-state, #pulseaudio, #system, #disk, #memory, #cpu, #network, #custom-notification, #clock {
 	background-color: @color0;
-	padding: 5px 10px;
+	padding: 5px 15px;
 	margin: 0px 0px;
 }
 
 #workspaces {
 	background-color: @color4;
-	border-radius: 15px 0px 0px 15px;
+	/* border-radius: 7px 0px 0px 7px; */
 	padding: 5px 10px;
 	margin: 0px 0px;
 }
@@ -42,13 +43,13 @@ tooltip label {
 #workspaces button.active {
     color: @color7;
     background-color: @color0;
-    border-radius: 15px;
+    border-radius: 7px;
 }
 
 #workspaces button:hover {
 	background-color: @color0;
 	color: @color0;
-	border-radius: 15px;
+	border-radius: 7px;
 }
 
 
@@ -74,7 +75,7 @@ tooltip label {
 }
 
 #clock {
-    border-radius: 0px 15px 15px 0px;
+    /* border-radius: 0px 7px 7px 0px; */
     margin-right: 10px;
 }
 

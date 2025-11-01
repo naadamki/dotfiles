@@ -1,7 +1,8 @@
 {
 	"layer":"bottom",
 	"reload_style_on_change": true,
-	"modules-right": ["hyprland/workspaces", "keyboard-state", "pulseaudio", "group/system", "clock"],
+	"modules-left": [],
+	"modules-right": ["hyprland/workspaces", "keyboard-state", "pulseaudio", "group/system", "custom/notification",  "clock"],
 
 	"hyprland/workspaces": {
 		"all-outputs": true,
@@ -89,6 +90,32 @@
 		"max-length": 50,
 		"on-click": "foot -e nmtui"
 	},
+
+
+	"custom/notification": {
+		"tooltip": true,
+		"tooltip-format": "Notifications",
+		"format": "{icon}",
+		"format-icons": {
+			"notification": "<span foreground='white'><sup></sup></span>",
+			"none": "",
+			"dnd-notification": "<span foreground='white'><sup></sup></span>",
+			"dnd-none": "",
+			"inhibited-notification": "<span foreground='white'><sup></sup></span>",
+			"inhibited-none": "",
+			"dnd-inhibited-notification": "<span foreground='white'><sup></sup></span>",
+			"dnd-inhibited-none": ""
+		},
+		"return-type": "json",
+		"exec-if": "which swaync-client",
+		"exec": "swaync-client -swb",
+		"on-click": "swaync-client -t -sw",
+		"on-click-right": "swaync-client -d -sw",
+		"escape": true
+	},		
+
+
+
 
 	"clock": {
 		"format": "{:%b %d  %H:%M}"

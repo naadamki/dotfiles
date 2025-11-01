@@ -1,4 +1,5 @@
 hyprland
+hyprpaper
 kitty
 rofi
 xdg-desktop-portal-hyprland
@@ -8,15 +9,23 @@ pavucontrol
 waybar
 micro
 yazi
-
 nvidia-dkms
 nvidia-utils
 egl-wayland
 libva-nvidia-driver
-
 ttf-inconsolata-nerd
 ttf-inconsolata
+github-cli
 
+
+
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
+cd ..
+rm -rf yay-bin
+
+yay -Sy google-chrome pywal-git
 
 
 
@@ -28,3 +37,19 @@ sudo mkinitcpio -P
 
 run cat /sys/module/nvidia_drm/parameters/modeset should return Y
 
+
+
+git config --global user.name 'Nathaniel Adam King'
+git config --global user.email 'naadamki@gmail.com'
+
+ssh-keygen -t ed25519 -C 'naadamki@gmail.com'
+
+
+
+rm $HOME/.config/rofi/colors.rasi
+rm $HOME/.config/waybar/colors.css
+rm $HOME/.config/hypr/colors.conf
+
+ln $HOME/.cache/wal/colors.rasi $HOME/.config/rofi/colors.rasi
+ln $HOME/.cache/wal/colors-waybar.css $HOME/.config/waybar/colors.css
+ln $HOME/.cache/wal/colors-hyprland.conf $HOME/.config/hypr/colors.conf

@@ -44,11 +44,11 @@ run_cmd() {
 		elif [[ $1 == '--reboot' ]]; then
 			systemctl reboot
 		elif [[ $1 == '--lock' ]]; then
-			swaylock
+			hyprlock
 		elif [[ $1 == '--suspend' ]]; then
 			systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
-			swaymsg exit
+			loginctl terminate-session $XDG_SESSION_ID
 		fi
 	else
 		exit 0
