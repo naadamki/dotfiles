@@ -25,3 +25,5 @@ ly-session.log
 .config/session
 
 .config/systemd
+.dot
+.dot
