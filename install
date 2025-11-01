@@ -3,9 +3,11 @@ hyprpaper
 kitty
 rofi
 xdg-desktop-portal-hyprland
+qt5ct
 qt5-wayland
 qt6-wayland
 pavucontrol
+pamixer
 waybar
 micro
 yazi
@@ -15,9 +17,27 @@ egl-wayland
 libva-nvidia-driver
 ttf-inconsolata-nerd
 ttf-inconsolata
+noto-fonts
+ttf-hack
 github-cli
 swaync
 libnotify
+kvantum
+network-manager-applet
+wl-clipboard
+hyprpolkit
+
+
+
+
+
+
+
+export GBM_BACKEND=nvidia-drm
+export EGL_PLATFORM=wayland
+export QT_QPA_PLATFORMTHEME="qt5ct"
+
+
 
 
 git clone https://aur.archlinux.org/yay-bin.git
