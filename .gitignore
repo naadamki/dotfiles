@@ -23,7 +23,4 @@ ly-session.log
 .config/pavucontrol.ini
 .config/pulse
 .config/session
-
 .config/systemd
-.dot
-.dot
