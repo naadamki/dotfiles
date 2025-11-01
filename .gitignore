@@ -24,3 +24,4 @@ ly-session.log
 .config/pulse
 .config/session
 
+.config/systemd
