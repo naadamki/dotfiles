@@ -16,7 +16,8 @@ libva-nvidia-driver
 ttf-inconsolata-nerd
 ttf-inconsolata
 github-cli
-
+swaync
+libnotify
 
 
 git clone https://aur.archlinux.org/yay-bin.git
