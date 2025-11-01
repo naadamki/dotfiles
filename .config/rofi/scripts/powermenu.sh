@@ -44,7 +44,7 @@ run_cmd() {
 		elif [[ $1 == '--reboot' ]]; then
 			systemctl reboot
 		elif [[ $1 == '--lock' ]]; then
-			hyprlock
+			swaylock
 		elif [[ $1 == '--suspend' ]]; then
 			systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
