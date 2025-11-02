@@ -5,9 +5,6 @@ files
 .bash_profile
 .bashrc
 .cache
-!/home/naadamki/.cache/wal
-.cache/wal/*
-!/home/naadamki/.cache/wal/**
 .cargo
 .dot
 .gitconfig
