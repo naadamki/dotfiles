@@ -2,7 +2,6 @@ hyprland
 hyprpaper
 kitty
 rofi
-xdg-desktop-portal-hyprland
 qt5ct
 qt5-wayland
 qt6-wayland
@@ -13,8 +12,13 @@ micro
 yazi
 nvidia-dkms
 nvidia-utils
+mesa
 egl-wayland
 libva-nvidia-driver
+wayland-protocols
+xorg-xwayland
+xdg-desktop-portal-hyprland
+polkit
 ttf-inconsolata-nerd
 ttf-mplus-nerd
 ttf-hack
@@ -39,18 +43,15 @@ rm -rf yay-bin
 yay -Sy google-chrome pywal-git
 
 
-
-
-edit /etc/mkinitcpio.conf
-MODULES=(...i915  nvidia nvidia_modeset nvidia_uvm nvidia_drm ...)
-
+edit /etc/mkinitcpio.conf > MODULES=(...i915  nvidia nvidia_modeset nvidia_uvm nvidia_drm ...)
 sudo mkinitcpio -P
 
-run cat /sys/module/nvidia_drm/parameters/modeset should return Y
+cat /sys/module/nvidia_drm/parameters/modeset should return Y
+
 
 
 ssh-keygen -t ed25519 -C 'naadamki@gmail.com'
-
+usermod -a -G input naadamki
 
 
 
