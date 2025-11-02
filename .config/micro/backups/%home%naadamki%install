@@ -1,0 +1,57 @@
+hyprland
+hyprpaper
+kitty
+rofi
+xdg-desktop-portal-hyprland
+qt5ct
+qt5-wayland
+qt6-wayland
+pavucontrol
+pamixer
+waybar
+micro
+yazi
+nvidia-dkms
+nvidia-utils
+egl-wayland
+libva-nvidia-driver
+ttf-inconsolata-nerd
+ttf-inconsolata
+noto-fonts
+ttf-hack
+github-cli
+libnotify
+kvantum
+network-manager-applet
+wl-clipboard
+hyprpolkit
+fish
+dunst
+swaylock
+
+
+
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
+cd ..
+rm -rf yay-bin
+
+yay -Sy google-chrome pywal-git
+
+
+
+
+edit /etc/mkinitcpio.conf
+MODULES=(...i915  nvidia nvidia_modeset nvidia_uvm nvidia_drm ...)
+
+sudo mkinitcpio -P
+
+run cat /sys/module/nvidia_drm/parameters/modeset should return Y
+
+
+ssh-keygen -t ed25519 -C 'naadamki@gmail.com'
+
+
+
+

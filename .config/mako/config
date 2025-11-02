@@ -1,0 +1,9 @@
+# ~/.config/mako/config
+
+# Style options
+font=Iconsolata 10
+background-color=rgba(0,0,0,0.8)
+border-size=0
+
+# Action on right-click
+on-button-right=exec makoctl menu -n "${id}"
