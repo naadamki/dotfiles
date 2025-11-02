@@ -27,3 +27,6 @@ ly-session.log
 .config/dconf
 .config/xsettingsd
 .config/htop
+.config/nwg-look
+.config/user-dirs.dirs
+.config/user-dirs.locale
