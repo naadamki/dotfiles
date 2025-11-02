@@ -24,3 +24,6 @@ ly-session.log
 .config/pulse
 .config/session
 .config/systemd
+.config/dconf
+.config/xsettingsd
+.config/htop
