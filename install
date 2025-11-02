@@ -16,28 +16,18 @@ nvidia-utils
 egl-wayland
 libva-nvidia-driver
 ttf-inconsolata-nerd
-ttf-inconsolata
-noto-fonts
+ttf-mplus-nerd
 ttf-hack
 github-cli
-swaync
 libnotify
 kvantum
 network-manager-applet
 wl-clipboard
 hyprpolkit
 fish
-
-
-
-
-
-
-export GBM_BACKEND=nvidia-drm
-export EGL_PLATFORM=wayland
-export QT_QPA_PLATFORMTHEME="qt5ct"
-
-
+dunst
+swaylock
+man-db
 
 
 git clone https://aur.archlinux.org/yay-bin.git
