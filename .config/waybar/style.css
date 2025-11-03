@@ -30,9 +30,10 @@ tooltip label {
 
 #workspaces {
 	background-color: @color4;
-	/* border-radius: 7px 0px 0px 7px; */
-	padding: 5px 10px;
+	border-radius: 7px 7px 7px 7px;
+	padding: 7px 10px;
 	margin: 0px 0px;
+	margin-right: 10px;
 }
 
 #workspaces button {
@@ -51,7 +52,6 @@ tooltip label {
 	color: @color0;
 	border-radius: 7px;
 }
-
 
 #system, #disk, #memory, #cpu, #network {
 	background-color: @color0;
