@@ -1,0 +1,32 @@
+
+# General
+show-failed-attempts
+indicator-radius=200
+indicator-thickness=10
+
+# Colors
+color={color0}
+inside-color={color0}
+inside-clear-color={color0}
+inside-ver-color={color0}
+inside-wrong-color={color0}
+
+ring-color={color4}
+ring-clear-color={color3}
+ring-ver-color={color2}
+ring-wrong-color={color1}
+
+line-color={color0}
+separator-color={color0}
+
+text-color={color7}
+text-clear-color={color7}
+text-ver-color={color7}
+text-wrong-color={color7}
+
+key-hl-color={color5}
+bs-hl-color={color1}
+
+# Font
+font=monolike
+font-size=40

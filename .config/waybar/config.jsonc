@@ -44,7 +44,7 @@
 		"format-source": "{volume}%",
 		"format-source-muted": " ",
 		"format-icons": {
-			"default": ["󰕿", "󰖀", "󰕾 "]
+			"default": ["󰕿 ", "󰖀 ", "󰕾 "]
 		},
 		"on-click": "pavucontrol",
 		"on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
