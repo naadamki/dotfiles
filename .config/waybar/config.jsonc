@@ -2,7 +2,7 @@
 	"layer":"bottom",
 	"reload_style_on_change": true,
 	"modules-left": [],
-	"modules-right": ["hyprland/workspaces", "keyboard-state", "pulseaudio", "group/system", "custom/notification",  "clock"],
+	"modules-right": ["hyprland/workspaces", "group/system", "keyboard-state", "pulseaudio",  "custom/notification",  "clock"],
 
 	"hyprland/workspaces": {
 		"all-outputs": true,
@@ -21,8 +21,6 @@
 		}
 	},
 
-
-
 	"hyprland/window": {
 		"format":"{}",
 		"separate-outputs":	true,
@@ -39,8 +37,6 @@
 			"unlocked": " "
 		}
 	},
-
-
   
 	"pulseaudio": {
 		"format": "{icon} {volume}%",
@@ -56,17 +52,16 @@
 		"on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%"    
 	},
 
-
 	"group/system": {
 		"orientation": "horizontal",
 		"drawer": {
 			"click-to-reveal": false
 		},
-		"modules": ["custom/stats", "disk", "memory", "cpu", "network"]
+		"modules": ["custom/arrow", "disk", "memory", "cpu", "network"]
 	},
 
-	"custom/stats": {
-		"format": " "
+	"custom/arrow": {
+		"format": "󰍜 "
 	},
 
 	"disk": {
@@ -85,42 +80,11 @@
 
 	"network": {
 		"format": "󰈀  {ipaddr}/{cidr}",
-		"format-wifi": " Connected",
-		"format-disconnected": "󱛅 Disconnected", //An empty format will hide the module.
+		"format-wifi": "  Connected",
+		"format-disconnected": "󱛅  Disconnected",
 		"max-length": 50,
 		"on-click": "kitty -e nmtui"
 	},
-
-
-	"custom/notification": {
-		"tooltip": true,
-		"tooltip-format": "Notifications",
-		"format": "{icon}",
-		"format-icons": {
-			"notification": "<span foreground='white'><sup></sup></span>",
-			"none": "",
-			"dnd-notification": "<span foreground='white'><sup></sup></span>",
-			"dnd-none": "",
-			"inhibited-notification": "<span foreground='white'><sup></sup></span>",
-			"inhibited-none": "",
-			"dnd-inhibited-notification": "<span foreground='white'><sup></sup></span>",
-			"dnd-inhibited-none": ""
-		},
-		"return-type": "json",
-		"exec-if": "which swaync-client",
-		"exec": "swaync-client -swb",
-		"on-click": "swaync-client -t -sw",
-		"on-click-right": "swaync-client -d -sw",
-		"escape": true
-	},		
-
-
-
-
-	// "clock": {
-	// 	"format": "{:%b %d  %H:%M}",
-	// 	"tooltip-format": "<tt><big>{calendar}</big></tt>"
-	// }
 
 	"clock": {
 	    "format": "{:%b %d  %H:%M}",
@@ -129,7 +93,7 @@
 	    "calendar": {
 	        "mode": "month",
 	        "format": {
-	            "today": "<b>{}</b>"
+	            "today": "<b><i>{}</i></b>"
 	        }
 	    }
 	}
