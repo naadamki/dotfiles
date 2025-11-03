@@ -1,0 +1,24 @@
+
+background 			#263139
+foreground 			#dac99d
+cursor 				#28343c
+
+normal
+black	color0 		#263139
+red		color1 		#f36f62
+green	color2 		#c5e19c
+yellow	color3 		#ccb478
+blue	color4 		#4c7e89
+magenta	color5 		#814d61
+cyan	color6 		#79a69d
+white	color7 		#c4c4b5
+
+bright
+black	color8	 	#455867
+red		color9 		#f36f62
+green	color10 	#c5e19c
+yellow	color11 	#ccb478
+blue	color12 	#4c7e89
+magenta	color13 	#814d61
+cyan	color14 	#79a69d
+white	color15 	#dbdbd1

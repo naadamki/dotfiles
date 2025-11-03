@@ -1,0 +1,24 @@
+
+background 			#242a2b
+foreground 			#8d8150
+cursor 				#242b2c
+
+normal
+black	color0 		#242a2b
+red		color1 		#674839
+green	color2 		#6e794f
+yellow	color3 		#8d8150
+blue	color4 		#3b474e
+magenta	color5 		#554c41
+cyan	color6 		#495355
+white	color7 		#939381
+
+bright
+black	color8	 	#939381
+red		color9 		#674839
+green	color10 	#6e794f
+yellow	color11 	#8d8150
+blue	color12 	#3b474e
+magenta	color13 	#554c41
+cyan	color14 	#495355
+white	color15 	#abab9c
