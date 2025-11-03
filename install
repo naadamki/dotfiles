@@ -12,8 +12,12 @@ micro
 yazi
 nvidia-dkms
 nvidia-utils
-mesa
+linux-headers
 egl-wayland
+
+
+mesa
+
 libva-nvidia-driver
 wayland-protocols
 xorg-xwayland
@@ -47,6 +51,9 @@ edit /etc/mkinitcpio.conf > MODULES=(...i915  nvidia nvidia_modeset nvidia_uvm n
 sudo mkinitcpio -P
 
 cat /sys/module/nvidia_drm/parameters/modeset should return Y
+
+edit /etc/modprobe.d/nvidia.conf > options nvidia_drm modeset=1
+
 
 
 
