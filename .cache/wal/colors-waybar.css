@@ -1,6 +1,6 @@
 @define-color foreground #80807e;
 @define-color background #272a2a;
-@define-color background-trans rgba(39,42,42,0.8);
+@define-color background-trans rgba(39,42,42,1.0);
 @define-color cursor #eaeaed;
 
 @define-color color0 #272a2a;

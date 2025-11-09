@@ -1,7 +1,0 @@
-git config --global user.name 'Nathaniel Adam King'
-git config --global user.email 'naadamki@gmail.com'
-
-alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
-git clone --bare https://github.com/naadamki/dotfiles.git $HOME/.dot
-dot checkout
-dot config --local status.showUntrackedFiles no
