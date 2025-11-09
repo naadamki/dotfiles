@@ -1,0 +1,32 @@
+
+# General
+show-failed-attempts
+indicator-radius=200
+indicator-thickness=10
+
+# Colors
+color=#272725
+inside-color=#272725
+inside-clear-color=#272725
+inside-ver-color=#272725
+inside-wrong-color=#272725
+
+ring-color=#455563
+ring-clear-color=#a78749
+ring-ver-color=#959c4f
+ring-wrong-color=#7d5151
+
+line-color=#272725
+separator-color=#272725
+
+text-color=#f2f2f2
+text-clear-color=#f2f2f2
+text-ver-color=#f2f2f2
+text-wrong-color=#f2f2f2
+
+key-hl-color=#9f908d
+bs-hl-color=#7d5151
+
+# Font
+font=monolike
+font-size=40
