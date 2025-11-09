@@ -12,4 +12,4 @@
 # if status is-interactive
 #   ...
 # end
-alias dot='/usr/bin/git --git-dir=/home/naadamki/.dot/ --work-tree=/home/naadamki'
+alias dt='/usr/bin/git --git-dir=/home/naadamki/.dt/ --work-tree=/home/naadamki'
