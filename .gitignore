@@ -1,4 +1,5 @@
 files
+downloads
 .dot
 .bash_history
 .bash_logout
@@ -14,6 +15,8 @@ files
 ly-session.log
 .nv
 .pki
+.python_history
+.gtkrc-2.0
 .ssh
 .config/dconf
 .config/gh
