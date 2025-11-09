@@ -1,61 +1,79 @@
-hyprland
-hyprpaper
-hypridle
-hyprpolkitagent
+#!/bin/bash
 
-kitty
-rofi
-qt5ct
-qt5-wayland
-qt6-wayland
-pavucontrol
-pamixer
-waybar
-micro
-yazi
-egl-wayland
-xdg-desktop-portal-hyprland
-polkit
-ttf-inconsolata-nerd
-ttf-mplus-nerd
-git
-github-cli
-libnotify
-kvantum
-wl-clipboard
-fish
-mako
-swaylock
-man-db
-reflector
-
-
-
-
-
+packages=" \
+	hyprland \
+	hyprpaper \
+	hypridle \
+	kitty \
+	rofi \
+	qt5ct \
+	qt5-wayland \
+	qt6-wayland \
+	pavucontrol \
+	hyprpolkitagent \
+	pamixer \
+	waybar \
+	micro \
+	yazi \
+	egl-wayland \
+	xdg-desktop-portal-hyprland \
+	polkit \
+	ttf-inconsolata-nerd \
+	ttf-mplus-nerd \
+	git \
+	github-cli \
+	libnotify \
+	mako \
+	kvantum \
+	wl-clipboard \
+	fish \
+	swaylock \
+	man-db \
+	reflector \
+"
 
 
+sudo pacman -S "$packages"
+
+if [ $? -eq 0 ]; then
+	echo "Packages installed successfully."
+
+	# Install yay
+	git clone https://aur.archlinux.org/yay-bin.git
+	cd yay-bin
+	makepkg -si
+	cd ..
+	rm -rf yay-bin
+
+	# Install google-chrome and pywal
+	yay -Sy google-chrome pywal-git
+	ssh-keygen -t ed25519 -C 'naadamki@gmail.com'
+	sudo usermod -a -G input naadamki
 
 
-git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin
-makepkg -si
-cd ..
-rm -rf yay-bin
 
-yay -Sy google-chrome pywal-git
+else
+	echo "Package installation failed. Exiting."
+	exit 1
+fi"   
 
 
-edit /etc/mkinitcpio.conf > MODULES=(...i915  nvidia nvidia_modeset nvidia_uvm nvidia_drm ...)
-sudo mkinitcpio -P
 
-cat /sys/module/nvidia_drm/parameters/modeset should return Y
-
-edit /etc/modprobe.d/nvidia.conf > options nvidia_drm modeset=1
+ 
 
 
-ssh-keygen -t ed25519 -C 'naadamki@gmail.com'
-usermod -a -G input naadamki
+
+
+
+# edit /etc/mkinitcpio.conf > MODULES=(...i915  nvidia nvidia_modeset nvidia_uvm nvidia_drm ...)
+# sudo mkinitcpio -P
+# 
+# cat /sys/module/nvidia_drm/parameters/modeset should return Y
+# 
+# edit /etc/modprobe.d/nvidia.conf > options nvidia_drm modeset=1
+
+
+
 
 
 

@@ -1,17 +1,17 @@
 [urgency=low]
-background-color=#f2f2f2
-text-color=#272725
-border-color=#272725
-progress-color=over #272725
+background-color=#c7ccd1
+text-color=#1c2023
+border-color=#1c2023
+progress-color=over #1c2023
 
 [urgency=normal]
-background-color=#455563
-text-color=#272725
-border-color=#272725
-progress-color=over #272725
+background-color=#ae95c7
+text-color=#1c2023
+border-color=#1c2023
+progress-color=over #1c2023
 
 [urgency=critical]
-background-color=#7d5151
-text-color=#272725
-border-color=#272725
-progress-color=over #272725
+background-color=#c7ae95
+text-color=#1c2023
+border-color=#1c2023
+progress-color=over #1c2023

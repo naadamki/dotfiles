@@ -1,24 +1,24 @@
 
-background 			#272725
-foreground 			#bc9f67
-cursor 				#282826
+background 			#1c2023
+foreground 			#c7ccd1
+cursor 				#c7ae95
 
 normal
-black	color0 		#272725
-red		color1 		#7d5151
-green	color2 		#959c4f
-yellow	color3 		#a78749
-blue	color4 		#455563
-magenta	color5 		#9f908d
-cyan	color6 		#4a5e5b
-white	color7 		#f2f2f2
+black	color0 		#1c2023
+red		color1 		#c7ae95
+green	color2 		#95c7ae
+yellow	color3 		#aec795
+blue	color4 		#ae95c7
+magenta	color5 		#c795ae
+cyan	color6 		#95aec7
+white	color7 		#c7ccd1
 
 bright
-black	color8	 	#4f4f4b
-red		color9 		#7d5151
-green	color10 	#959c4f
-yellow	color11 	#a78749
-blue	color12 	#455563
-magenta	color13 	#9f908d
-cyan	color14 	#4a5e5b
-white	color15 	#ffffff
+black	color8	 	#747c84
+red		color9 		#c7ae95
+green	color10 	#95c7ae
+yellow	color11 	#aec795
+blue	color12 	#ae95c7
+magenta	color13 	#c795ae
+cyan	color14 	#95aec7
+white	color15 	#f3f4f5
