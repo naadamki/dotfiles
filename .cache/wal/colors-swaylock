@@ -5,27 +5,27 @@ indicator-radius=200
 indicator-thickness=10
 
 # Colors
-color=#1c2023
-inside-color=#1c2023
-inside-clear-color=#1c2023
-inside-ver-color=#1c2023
-inside-wrong-color=#1c2023
+color=#272c30
+inside-color=#272c30
+inside-clear-color=#272c30
+inside-ver-color=#272c30
+inside-wrong-color=#272c30
 
-ring-color=#ae95c7
-ring-clear-color=#aec795
-ring-ver-color=#95c7ae
-ring-wrong-color=#c7ae95
+ring-color=#515e67
+ring-clear-color=#c79e84
+ring-ver-color=#637268
+ring-wrong-color=#934e46
 
-line-color=#1c2023
-separator-color=#1c2023
+line-color=#272c30
+separator-color=#272c30
 
-text-color=#c7ccd1
-text-clear-color=#c7ccd1
-text-ver-color=#c7ccd1
-text-wrong-color=#c7ccd1
+text-color=#cfb9a8
+text-clear-color=#cfb9a8
+text-ver-color=#cfb9a8
+text-wrong-color=#cfb9a8
 
-key-hl-color=#c795ae
-bs-hl-color=#c7ae95
+key-hl-color=#715f5e
+bs-hl-color=#934e46
 
 # Font
 font=monolike

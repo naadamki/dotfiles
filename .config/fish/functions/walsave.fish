@@ -35,7 +35,7 @@ function walsave
 
     # Use a single redirect to create/overwrite the file with the content
     if cat "$colors_scheme_file" > "$destination_file"
-        echo "Saved current color scheme to $destination_file"
+        echo "Saved color scheme $color_scheme to $destination_file"
     else
         echo "Error: Failed to save color scheme to $destination_file"
         return 1
