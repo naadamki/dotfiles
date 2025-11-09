@@ -33,3 +33,7 @@ ly-session.log
 .config/nwg-look
 .config/user-dirs.dirs
 .config/user-dirs.locale
+.gemini
+.npm
+.npm-global
+.npmrc
