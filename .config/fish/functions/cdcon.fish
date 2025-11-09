@@ -17,9 +17,5 @@ function cdcon --description "cd into ~/.config/ and optional subfolders"
     # Use cd and handle potential errors
     # Quoting "$target_dir" is crucial
     cd "$target_dir"
-    
-    if test $status -ne 0
-        echo "Error: Directory not found or inaccessible: \"$target_dir\"" >&2
-        return 1
-    end
+
 end
