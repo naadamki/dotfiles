@@ -1,5 +1,8 @@
 hyprland
 hyprpaper
+hypridle
+hyprpolkitagent
+
 kitty
 rofi
 qt5ct
@@ -10,32 +13,28 @@ pamixer
 waybar
 micro
 yazi
-nvidia-dkms
-nvidia-utils
-linux-headers
 egl-wayland
-
-
-mesa
-
-libva-nvidia-driver
-wayland-protocols
-xorg-xwayland
 xdg-desktop-portal-hyprland
 polkit
 ttf-inconsolata-nerd
 ttf-mplus-nerd
-ttf-hack
+git
 github-cli
 libnotify
 kvantum
-network-manager-applet
 wl-clipboard
-hyprpolkit
 fish
-dunst
+mako
 swaylock
 man-db
+reflector
+
+
+
+
+
+
+
 
 
 git clone https://aur.archlinux.org/yay-bin.git
@@ -53,8 +52,6 @@ sudo mkinitcpio -P
 cat /sys/module/nvidia_drm/parameters/modeset should return Y
 
 edit /etc/modprobe.d/nvidia.conf > options nvidia_drm modeset=1
-
-
 
 
 ssh-keygen -t ed25519 -C 'naadamki@gmail.com'
