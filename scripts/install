@@ -1,79 +1,23 @@
 #!/bin/bash
 
-packages=" \
-	hyprland \
-	hyprpaper \
-	hypridle \
-	kitty \
-	rofi \
-	qt5ct \
-	qt5-wayland \
-	qt6-wayland \
-	pavucontrol \
-	hyprpolkitagent \
-	pamixer \
-	waybar \
-	micro \
-	yazi \
-	egl-wayland \
-	xdg-desktop-portal-hyprland \
-	polkit \
-	ttf-inconsolata-nerd \
-	ttf-mplus-nerd \
-	git \
-	github-cli \
-	libnotify \
-	mako \
-	kvantum \
-	wl-clipboard \
-	fish \
-	swaylock \
-	man-db \
-	reflector \
-"
+if [ -z "$1" ]; then
+	echo "Usage: $0 <package_list_file>"
+	exit 1
+fi
 
+PACKAGE_LIST_FILE="$1"
 
-sudo pacman -S "$packages"
+if [ ! -f "$PACKAGE_LIST_FILE" ]; then
+	echo "Error: Package list file '$PACKAGE_LIST_FILE' not found."
+	exit 1
+fi
+
+echo "Installing packages from '$PACKAGE_LIST_FILE'..."
+
+sudo pacman -S --needed - < "$PACKAGE_LIST_FILE"
 
 if [ $? -eq 0 ]; then
-	echo "Packages installed successfully."
-
-	# Install yay
-	git clone https://aur.archlinux.org/yay-bin.git
-	cd yay-bin
-	makepkg -si
-	cd ..
-	rm -rf yay-bin
-
-	# Install google-chrome and pywal
-	yay -Sy google-chrome pywal-git
-	ssh-keygen -t ed25519 -C 'naadamki@gmail.com'
-	sudo usermod -a -G input naadamki
-
-
-
+	echo "Package installation completed successfully."
 else
-	echo "Package installation failed. Exiting."
-	exit 1
-fi"   
-
-
-
- 
-
-
-
-
-
-# edit /etc/mkinitcpio.conf > MODULES=(...i915  nvidia nvidia_modeset nvidia_uvm nvidia_drm ...)
-# sudo mkinitcpio -P
-# 
-# cat /sys/module/nvidia_drm/parameters/modeset should return Y
-# 
-# edit /etc/modprobe.d/nvidia.conf > options nvidia_drm modeset=1
-
-
-
-
-
-
+	echo "Error: Package installation failed."
+fi
