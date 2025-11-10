@@ -1,0 +1,24 @@
+
+background 			#000000
+foreground 			#ffffff
+cursor 				#a37679
+
+normal
+black	color0 		#3d3e3d
+red		color1 		#755a5b
+green	color2 		#68755a
+yellow	color3 		#756e5a
+blue	color4 		#5b6976
+magenta	color5 		#755b76
+cyan	color6 		#465457
+white	color7 		#ccccc6
+
+bright
+black	color8	 	#5a5b5c
+red		color9 		#755a5b
+green	color10 	#68755a
+yellow	color11 	#756e5a
+blue	color12 	#5b6976
+magenta	color13 	#755b76
+cyan	color14 	#465457
+white	color15 	#ccccc6

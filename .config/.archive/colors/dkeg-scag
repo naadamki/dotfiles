@@ -1,0 +1,24 @@
+
+background 			#252326
+foreground 			#7a8648
+cursor 				#c4bbb0
+
+normal
+black	color0 		#252326
+red		color1 		#93503e
+green	color2 		#9d8554
+yellow	color3 		#7a8648
+blue	color4 		#5f656a
+magenta	color5 		#7b6064
+cyan	color6 		#566e6b
+white	color7 		#c4bbb0
+
+bright
+black	color8	 	#413f43
+red		color9 		#93503e
+green	color10 	#9d8554
+yellow	color11 	#7a8648
+blue	color12 	#5f656a
+magenta	color13 	#7b6064
+cyan	color14 	#566e6b
+white	color15 	#c4bbb0

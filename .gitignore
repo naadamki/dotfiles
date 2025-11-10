@@ -38,3 +38,5 @@ ly-session.log
 .npm-global
 .npmrc
 .config/cosmic
+.config/evolution
+.config/monitors.xml
