@@ -37,3 +37,4 @@ ly-session.log
 .npm
 .npm-global
 .npmrc
+.config/cosmic
